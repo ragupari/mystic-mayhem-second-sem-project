@@ -37,7 +37,13 @@ public class ShowArmy {
             }
         }
         System.out.println(""+currentChar+" is the current "+FileReadWrite.readNthLine(player.getUserName(), line)[0]);
-        if (count>2){
+        if ((( 
+            !(getAllValues[0].equals("None"))||
+            !(getAllValues[1].equals("None"))||
+            !(getAllValues[2].equals("None"))||
+            !(getAllValues[3].equals("None"))||
+            !(getAllValues[4].equals("None"))
+        )&&(FileReadWrite.readNthLine(player.getUserName(), line)[8].equals("None"))) || (count>2)){
             System.out.println("If you want to change the current "+getAllValues[0]+", Select new character :");
             System.out.println("Press any other to go back");
             String choice3 = scanner.next();
@@ -48,6 +54,8 @@ public class ShowArmy {
                 for (String i: getChar) {
                     if (count2 == choice4){
                         FileReadWrite.writeNthLine(player.getUserName(),line,8,i);
+                        System.out.println("Your current character of this army successfully changed!");
+                        Main.welcomePage(player);
                     }
                     if (!(i.equals("None"))){
                         count2++;

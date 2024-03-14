@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Sell {
         
     static void sellArmy(Player player){
+        try{
         String[][][] allCharacters = {
             // Archers
             {
@@ -101,5 +102,9 @@ public class Sell {
         }
 
     }
+    catch (Exception e){
+        Main.welcomePage(player);
+}
+}
     
 }

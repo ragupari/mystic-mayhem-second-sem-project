@@ -32,6 +32,7 @@ public class War {
                 Player challenger = new Player(declaredBy);
                
                 battle(challenger,player);
+
                 Main.welcomePage(player);
                 break;
             case "2":
@@ -53,6 +54,30 @@ public class War {
         Player challenger = declarer;
         Player challenged = opponent;
         String homeland = opponent.getHomeland();
+        if (
+            challenger.getArcher().getCurrent().equals("None")||
+        challenger.getKnight().getCurrent().equals("None")||
+        challenger.getMage().getCurrent().equals("None")||
+        challenger.getHealer().getCurrent().equals("None")||
+        challenger.getCreature().getCurrent().equals("None")
+        )
+        {
+            System.out.println("Challenger doesn't have all the army catergories.");
+            System.out.println("Can't start this war now!");
+            Main.welcomePage(opponent); 
+        }
+        if (
+            challenged.getArcher().getCurrent().equals("None")||
+        challenged.getKnight().getCurrent().equals("None")||
+        challenged.getMage().getCurrent().equals("None")||
+        challenged.getHealer().getCurrent().equals("None")||
+        challenged.getCreature().getCurrent().equals("None")
+        )
+        {
+            System.out.println("You don't have all the army catergories.");
+            System.out.println("You can't start this war now! Try buying armies or set current characters!");
+            Main.welcomePage(opponent); 
+        }
 
 
         challenger.getArcher().setCharacterForBattle(homeland);
@@ -92,6 +117,10 @@ public class War {
                 FileReadWrite.writeNthLine(challenger.getUserName(),3,1,challenger.getGC()+"");
                 FileReadWrite.writeNthLine(challenged.getUserName(),3,1,challenged.getGC()+"");
                 FileReadWrite.writeNthLine(challenger.getUserName(),4,1,challenger.getXP()+"");
+                FileReadWrite.writeNthLine(declarer.getUserName(), 10, 1, "None");
+                FileReadWrite.writeNthLine(declarer.getUserName(), 10, 2, "None");
+                FileReadWrite.writeNthLine(opponent.getUserName(), 10, 1, "None");
+                FileReadWrite.writeNthLine(opponent.getUserName(), 10, 2, "None");
                 System.exit(0);
                 break;
             }
@@ -114,8 +143,12 @@ public class War {
                 FileReadWrite.writeNthLine(challenger.getUserName(),3,1,challenger.getGC()+"");
                 FileReadWrite.writeNthLine(challenged.getUserName(),3,1,challenged.getGC()+"");
                 FileReadWrite.writeNthLine(challenger.getUserName(),4,1,challenger.getXP()+"");
-                System.exit(0);
-                break;
+                FileReadWrite.writeNthLine(declarer.getUserName(), 10, 1, "None");
+        FileReadWrite.writeNthLine(declarer.getUserName(), 10, 2, "None");
+        FileReadWrite.writeNthLine(opponent.getUserName(), 10, 1, "None");
+        FileReadWrite.writeNthLine(opponent.getUserName(), 10, 2, "None");
+        System.exit(0);
+        break;
             }
             
             // if (turn%2 == 1){
@@ -147,10 +180,10 @@ public class War {
         System.out.println(challenger.getName()+" XP: "+challenger.getXP()+" gold coin: "+challenger.getGC());
         System.out.println(challenged.getName()+" XP: "+challenged.getXP()+" gold coin: "+challenged.getGC());
         }
-        FileReadWrite.writeNthLine(challenger.getUserName(), 10, 1, "None");
-        FileReadWrite.writeNthLine(challenger.getUserName(), 10, 2, "None");
-        FileReadWrite.writeNthLine(challenged.getUserName(), 10, 1, "None");
-        FileReadWrite.writeNthLine(challenged.getUserName(), 10, 2, "None");
+        FileReadWrite.writeNthLine(declarer.getUserName(), 10, 1, "None");
+        FileReadWrite.writeNthLine(declarer.getUserName(), 10, 2, "None");
+        FileReadWrite.writeNthLine(opponent.getUserName(), 10, 1, "None");
+        FileReadWrite.writeNthLine(opponent.getUserName(), 10, 2, "None");
         System.exit(0);
         Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
