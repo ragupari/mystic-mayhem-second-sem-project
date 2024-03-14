@@ -1,0 +1,107 @@
+Output of the battle between pari and whitewolf
+
+--------------------------------------
+Turn 1: Parishith
+Warlock attacks Ranger
+Ranger's health: 2.6
+Warlock's health: 10
+--------------------------------------
+Turn 2: GeraltofRivia
+Warlock attacks Shooter
+Shooter's health: 0.4
+Warlock's health: 10
+--------------------------------------
+Turn 3: Parishith
+Shooter attacks Ranger
+Ranger died!
+Shooter's health: 0.4
+--------------------------------------
+Turn 4: GeraltofRivia
+Squire attacks Shooter
+Shooter died!
+Squire's health: 7
+--------------------------------------
+Turn 5: Parishith
+Squire attacks Medic
+Medic's health: 7.8
+Squire's health: 7
+--------------------------------------
+Turn 6: GeraltofRivia
+Dragon attacks Soother
+Soother's health: 4.3
+Dragon's health: 15
+--------------------------------------
+Turn 7: Parishith
+Dragon attacks Medic
+Medic's health: 3.1
+Dragon's health: 15
+--------------------------------------
+Turn 8: GeraltofRivia
+Medic heals Medic
+Medic's health: 4.4
+Medic's health: 4.4
+--------------------------------------
+Turn 9: Parishith
+Soother heals Soother
+Soother's health: 5.2
+Soother's health: 5.2
+--------------------------------------
+Turn 10: GeraltofRivia
+Warlock attacks Soother
+Soother died!
+Warlock's health: 10
+--------------------------------------
+Turn 11: Parishith
+Warlock attacks Medic
+Medic died!
+Warlock's health: 10
+--------------------------------------
+Turn 12: GeraltofRivia
+Squire attacks Warlock
+Warlock's health: 6.9
+Squire's health: 7
+--------------------------------------
+Turn 13: Parishith
+Squire attacks Warlock
+Warlock's health: 6.9
+Squire's health: 7
+--------------------------------------
+Turn 14: GeraltofRivia
+Dragon attacks Warlock
+Warlock's health: 2.3
+Dragon's health: 15
+--------------------------------------
+Turn 15: Parishith
+Dragon attacks Warlock
+Warlock's health: 2.3
+Dragon's health: 15
+--------------------------------------
+Turn 16: GeraltofRivia
+Warlock attacks Warlock
+Warlock died!
+Warlock's health: 2.3
+--------------------------------------
+Turn 17: Parishith
+Squire attacks Warlock
+Warlock died!
+Squire's health: 7
+--------------------------------------
+Turn 18: GeraltofRivia
+Squire attacks Squire
+Squire's health: 4.1
+Squire's health: 7
+--------------------------------------
+Turn 19: Parishith
+Dragon attacks Squire
+Squire's health: 2.6
+Dragon's health: 15
+--------------------------------------
+Turn 20: GeraltofRivia
+Dragon attacks Squire
+Squire died!
+Dragon's health: 15
+
+Draw
+Parishith XP: 10 gold coin: 300
+GeraltofRivia XP: 32 gold coin: 215
+
