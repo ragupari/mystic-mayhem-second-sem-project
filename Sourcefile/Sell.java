@@ -69,12 +69,17 @@ public class Sell {
         String currentChar = characterValues[8];
         int increase =Integer.parseInt( characterValues[9]);
         int sellingprice = increase+amount;
+        if (((FileReadWrite.readNthLine(player.getUserName(), line))[(Integer.parseInt(choice1)+2)].equals("None"))){
+            System.out.println("You don't have any character of this category!");
+            Main.welcomePage(player);
+            }
         System.out.println(characterSelected+" can be sold for "+sellingprice+" GC.");
         System.out.println("\t1. Sell");
         System.out.println("\t2. Go back");
         String choice2 = scanner.next();
         switch (choice2){
             case "1":
+            if (!((FileReadWrite.readNthLine(player.getUserName(), line))[(Integer.parseInt(choice1)+2)].equals("None"))){
             FileReadWrite.writeNthLine(player.getUserName(),3,1,sellingprice+"");
             FileReadWrite.writeNthLine(player.getUserName(),line,(Integer.parseInt(choice1)+2),"None");
             player.addGC(sellingprice);
@@ -82,6 +87,9 @@ public class Sell {
             if (currentChar.equals(characterSelected)){
                 FileReadWrite.writeNthLine(player.getUserName(),line,8,"None");
                 System.out.println("Select your current character in 'Show my arrmy'");
+                Main.welcomePage(player);
+            }}else{
+                System.out.println("You don't have any character of this category!");
                 Main.welcomePage(player);
             }
             break;

@@ -66,7 +66,7 @@ public class Main {
                 file.createNewFile();
             }
             BufferedWriter writer = new BufferedWriter(new FileWriter(file, true)); // Note the 'true' parameter
-            writer.write("Name,GeraltofRivia,\nUser ID,1,\nGC,215,\nXP,32,\nArcher,Chainmail,None,None,Ranger,None,None,None,Ranger,0,\nKnight,None,None,None,Squire,None,None,None,Squire,0,\nMage,None,None,Warlock,None,None,None,None,Warlock,0,\nHealer,None,Amulet,None,Medic,None,None,None,Medic,0,\nCreature,None,None,Dragon,None,None,None,None,Dragon,0,\nWar,None,None,\nHomeground,Marshland,\n");
+            writer.write("Name,GeraltofRivia,\nUser ID,1,\nGC,215,\nXP,32,\nArcher,Chainmail,None,None,Ranger,None,None,None,Ranger,0,\nKnight,None,None,Squire,None,None,None,None,Squire,0,\nMage,None,None,Warlock,None,None,None,None,Warlock,0,\nHealer,None,Amulet,None,Medic,None,None,None,Medic,0,\nCreature,None,None,Dragon,None,None,None,None,Dragon,0,\nWar,None,None,\nHomeground,Marshland,\n");
             writer.close();
         } catch (IOException e) {
         }
