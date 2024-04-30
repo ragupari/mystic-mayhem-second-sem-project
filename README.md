@@ -1,4 +1,4 @@
-To run the exe file (executable.jar) use '--enable-preview' flag
+To run the exe file (executable_file.jar) use '--enable-preview' flag
 
 Our Mystic Mayhem game will create a new 'username'.txt file for each player inside 'Players' folder.
 Also will create a record in 'players.csv' file for each existing and new player.
