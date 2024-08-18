@@ -1,36 +1,94 @@
-To run the exe file (executable_file.jar) use '--enable-preview' flag
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Mayhem - README</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: Consolas, "Courier New", monospace;
+            color: #d14;
+        }
+        pre {
+            background-color: #333;
+            color: #eee;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mystic Mayhem</h1>
+    <p>Mystic Mayhem is a strategic multiplayer game where players create and manage armies, declare wars, and engage in epic battles. The game provides a rich experience with various features and options for players to explore.</p>
 
-Our Mystic Mayhem game will create a new 'username'.txt file for each player inside 'Players' folder.
-Also will create a record in 'players.csv' file for each existing and new player.
+    <h2>Running the Game</h2>
+    <p>To run the game, use the following command:</p>
+    <pre><code>java -jar --enable-preview executable_file.jar</code></pre>
 
-At the begining of the game, it will create a few default players.
-    1. GeraltofRivia with usename 'whitewolf'
-    2. Parishith with usename 'pari'
-    3. Kajaluxan with usename 'kajali'
-    4. Sukithan with usename 'Suki'
-    5. Vithusanaa with usename 'Vithu'
+    <h2>Game Structure</h2>
 
-You can create a new player or can login to an existing player using the appropriate username.
-(Note that the usernames are case-sensitive)
+    <h3>Player Creation</h3>
+    <p>At the beginning of the game, a few default players are automatically created. Each player has a unique username:</p>
+    <ul>
+        <li><strong>GeraltofRivia</strong> with username <code>'whitewolf'</code></li>
+        <li><strong>Parishith</strong> with username <code>'pari'</code></li>
+        <li><strong>Kajaluxan</strong> with username <code>'kajali'</code></li>
+        <li><strong>Sukithan</strong> with username <code>'Suki'</code></li>
+        <li><strong>Vithusanaa</strong> with username <code>'Vithu'</code></li>
+    </ul>
+    <p>For each player, the game will:</p>
+    <ul>
+        <li>Create a new file <code>'username'.txt</code> inside the <code>Players</code> folder.</li>
+        <li>Add a record in the <code>players.csv</code> file for both existing and new players.</li>
+    </ul>
 
-In the welcome page, you can access all the informations such as,
-    1. Show my army
-    2. Buy army
-    3. Buy equipment
-    4. Sell army
-    5. Set my homeground
-    6. Show other players (You can declare war with other players here)
-    7. Go to War
+    <h3>Login and Player Management</h3>
+    <p>You can either create a new player or log in to an existing player using the appropriate username. <strong>Note:</strong> Usernames are case-sensitive.</p>
 
-To check the functionality of our game under '6. Show other players (You can declare war with other players here)',
-you can see the other players stats. These will be randomly shown.
-You can declare war with other players in this section.
-But even if you declared the war, the other player must accept it to see the battle results.
+    <h3>Welcome Page</h3>
+    <p>On the welcome page, you have access to the following options:</p>
+    <ul>
+        <li><strong>Show my army</strong> - View the details of your army.</li>
+        <li><strong>Buy army</strong> - Purchase new army units.</li>
+        <li><strong>Buy equipment</strong> - Buy equipment for your army.</li>
+        <li><strong>Sell army</strong> - Sell units from your army.</li>
+        <li><strong>Set my homeground</strong> - Choose and set your homeground.</li>
+        <li><strong>Show other players</strong> - View stats of other players and declare war.</li>
+        <li><strong>Go to War</strong> - Accept war invitations and see battle results.</li>
+    </ul>
 
-For the sake of checking the functionality, declare war to a player from '6. Show other players (You can declare war with other players here)' section,
-and then login as that other player and under '7. Go to war' section accept the war invitation. 
-Then the battle results will be shown.
+    <h3>Declaring War</h3>
+    <p>To test the functionality of the game:</p>
+    <ul>
+        <li>Go to the <strong>Show other players</strong> section.</li>
+        <li>View the stats of other players (these will be randomly shown).</li>
+        <li>Declare war on a player from this section.</li>
+        <li>Log in as the other player.</li>
+        <li>Under <strong>Go to War</strong>, accept the war invitation to see the battle results.</li>
+    </ul>
 
-Before going to battle, buy atleast one character from each army category.
-
-(Note that if you choose other than the given options, in somecases it might cause errors)
+    <h3>Important Notes</h3>
+    <ul>
+        <li>Before going to battle, make sure to buy at least one character from each army category.</li>
+        <li>If you choose options outside of the provided ones, it might cause errors.</li>
+    </ul>
+</body>
+</html>
