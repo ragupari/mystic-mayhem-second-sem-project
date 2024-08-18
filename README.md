@@ -1,11 +1,11 @@
-# Mystic Mayhem
-
+Mystic Mayhem
 Mystic Mayhem is a strategic multiplayer game where players create and manage armies, declare wars, and engage in epic battles. The game provides a rich experience with various features and options for players to explore.
 
-## Running the Game
-
+Running the Game
 To run the game, use the following command:
 
+bash
+Copy code
 java -jar --enable-preview executable_file.jar
 Game Structure
 Player Creation
