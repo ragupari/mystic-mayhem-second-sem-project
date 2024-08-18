@@ -10,10 +10,6 @@ Mystic Mayhem is an interactive command-line game where players can build their 
 - **Battle System**: Engage in battles with other players upon mutual agreement.
 
 ## Getting Started
-
-### Prerequisites
-To run the game, make sure you have the Java Runtime Environment (JRE) installed. You'll need to use the `--enable-preview` flag to run the executable JAR file.
-
 ### Running the Game
 To start the game, navigate to the directory containing the `executable_file.jar` and run the following command:
 Game Structure
@@ -53,6 +49,9 @@ Under 7. Go to War, accept the war invitation to see the battle results.
 Important Notes
 Before going to battle, make sure to buy at least one character from each army category.
 If you choose options outside of the provided ones, it might cause errors.
+
+### Prerequisites
+To run the game, make sure you have the Java Runtime Environment (JRE) installed. You'll need to use the `--enable-preview` flag to run the executable JAR file.
 
 ```bash
 java --enable-preview -jar executable_file.jar
